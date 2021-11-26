@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='app.js'></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Army List Creator</h1>
+    <form id='new_unit_form'>
+        <label for="name">Name:</label>
+        <input type="name" name='name' id = 'name'>
+        <label for="pts">Pts:</label>
+        <input type="number" name="pts" id="pts">
+        <label for="type">Type:</label>
+        <select id="type">
+            <option value="" disabled selected></option>
+            <option value="#hq">HQ</option>
+            <option value="#elites">Elite</option>
+            <option value="#troops">Troop</option>
+            <option value="#fast">Fast Attack</option>
+            <option value="#heavy">Heavy Support</option>
+        </select>
+        <input type="submit" value="save"/>
+    </form>
+    <button id='Delete'>Delete</button>
+    <h1>Army List</h1>
+    <ul id="army">
+        <h3>HQ</h3>
+        <ul id="hq"></ul>
+        <button id='DeleteHq'>Delete HQs</button>
+        <h3>Elites</h3>
+        <ul id="elites"></ul>
+        <button id='DeleteElites'>Delete Elites</button>
+        <h3>Troops</h3>
+        <ul id="troops"></ul>
+        <button id='DeleteTroops'>Delete Troops</button>
+        <h3>Fast Attack</h3>
+        <ul id="fast"></ul>
+        <button id='DeleteFast'>Delete Fast Attack</button>
+        <h3>Heavy Support</h3>
+        <ul id="heavy"></ul>
+        <button id='DeleteHeavy'>Delete Heavy Support</button>
+    </ul>
+</body>
+</html>
